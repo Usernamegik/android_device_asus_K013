@@ -9,6 +9,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := audio_policy_configuration.xml
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 LOCAL_REQUIRED_MODULES := \
@@ -24,12 +25,14 @@ LOCAL_PATH := frameworks/av/services/audiopolicy/config
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := audio_policy_volumes.xml
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := default_volume_tables.xml
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
@@ -38,12 +41,14 @@ LOCAL_PATH := hardware/intel/audio/audio_route_manager/config
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := audio_criteria.xml
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := audio_criterion_types.xml
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)

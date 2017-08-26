@@ -10,7 +10,8 @@ TARGET_INIT_VENDOR_LIB := libinit_me176c
 TARGET_IGNORE_RO_BOOT_SERIALNO := true
 
 WITH_DEXPREOPT := true
-WITH_DEXPREOPT_PIC := true
+
+DEVICE_MANIFEST_FILE := device/asus/me176c/manifest.xml
 
 ifeq ($(TARGET_DEVICE), K013)
 TWRP_BUILD := true

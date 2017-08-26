@@ -1,0 +1,10 @@
+service power-hal-1-0 /vendor/bin/hw/android.hardware.power@1.0-service.me176c
+    class hal
+    user system
+    group system
+    seclabel u:object_r:hal_power_default_exec:s0
+
+# TODO: Remove when performance profiles are implemented again
+on boot
+    # Disable Turbo
+    write /sys/devices/system/cpu/intel_pstate/no_turbo 1

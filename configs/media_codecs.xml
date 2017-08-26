@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MediaCodecs>
+    <!-- TODO: Hardware video acceleration
     <Decoders>
         <MediaCodec name="OMX.Intel.hw_vd.h264" type="video/avc" >
             <Limit name="size" min="64x64" max="3840x2160" />
@@ -19,12 +20,15 @@
             <Limit name="bitrate" range="1-15000000" />
         </MediaCodec>
     </Encoders>
+    -->
 
-    <Include href="media_codecs_ffmpeg.xml" />
+    <!-- TODO <Include href="media_codecs_ffmpeg.xml" />-->
     <Include href="media_codecs_google_audio.xml" />
     <Include href="media_codecs_google_video.xml" />
 
+    <!-- TODO: Hardware video acceleration
     <Settings>
         <Setting name="max-video-encoder-input-buffers" value="9" />
     </Settings>
+    -->
 </MediaCodecs>

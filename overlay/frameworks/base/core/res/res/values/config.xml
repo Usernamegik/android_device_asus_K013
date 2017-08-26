@@ -15,10 +15,6 @@
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
 
-    <!-- Hardware keys present on the device, stored as a bit field.
-         We have only volume control keys. -->
-    <integer name="config_deviceHardwareKeys">64</integer>
-
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>

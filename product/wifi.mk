@@ -7,10 +7,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml
 
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     me176c-wifi.rc \
     wpa_supplicant \
     wpa_supplicant.conf \
-    hostapd
+    hostapd \
+    wificond \
+    wifilogd
 
 # Firmware and NVRAM config
 PRODUCT_COPY_FILES += \
